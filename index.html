@@ -1,0 +1,219 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Google rebuild</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://images.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png">
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            color: #5f6368;
+            font-family: arial,sans-serif;
+        }
+        a, a:hover, a:focus, a:active {
+            text-decoration: none;
+            color: inherit;
+        }
+        input, input:hover, input:focus, input:active {
+            text-decoration: none;
+            color: inherit;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #searchbar {
+            border-radius: 50px;
+            width: 450px;
+            padding: 10px;
+            margin-top: 20px;
+            border: 1px solid #dfe1e5;
+            outline: none;
+        }
+        #searchbar:hover {
+            box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+            border-color: rgba(223,225,229,0);
+        }
+        .center {
+            display: block;
+            margin: auto;
+        }
+        #buttondiv {
+            margin-top: 1em;
+            padding: 5px;
+            text-align: center;
+        }
+        .button {
+            margin: 5px;
+            padding: 8px;
+            display: inline-block;
+            background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+            background-color: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            border-radius: 4px;
+            font-size: 14px;
+            outline: none;
+        }
+        .button:hover {
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+            background-color: #f8f8f8;
+            border: 1px solid #c6c6c6;
+        }
+        main {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .gb_D {
+            display: inline-block;
+            outline: none;
+            vertical-align: middle;
+            -webkit-border-radius: 2px;
+            border-radius: 2px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            height: 30px;
+            width: 30px;
+            color: #000;
+            cursor: pointer;
+            text-decoration: none;
+            background-position: -132px -38px;
+            opacity: .55;
+            background-image: url(//ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+            -webkit-background-size: 528px 68px;
+            background-size: 528px 68px;
+        }
+        .gb_La {
+            -webkit-background-size: 32px 32px;
+            background-size: 32px 32px;
+            border: 0;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            position: relative;
+            height: 32px;
+            width: 32px;
+            z-index: 0;
+            display: inline-block;
+            outline: none;
+            vertical-align: middle;
+        }
+
+                
+        nav {
+            top:0;
+            left:0;
+            position: absolute; /* User Story #11 */
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            color: rgba(0,0,0,0.87);
+        }
+
+        nav ul {
+            float: right;
+            list-style-type: none;
+            margin: 0 1rem;
+            padding: 0;
+        }
+
+        nav li a {
+            display: inline-block;
+            padding: 0.8em 0.6rem;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        nav ul, li {
+            display:inline;
+        }
+        
+        footer {
+            bottom:0;
+            left:0;
+            position: absolute; /* User Story #11 */
+            width: 100vw;
+            background-color: #F2F2F2;
+        }
+
+        .bottomright {
+            float: right;
+            list-style-type: none;
+            margin: 0 1rem;
+            padding: 0;
+        }
+
+        .bottomleft {
+            float: left;
+            list-style-type: none;
+            margin: 0 1rem;
+            padding: 0;
+        }
+
+        footer li a {
+            display: inline-block;
+            padding: 0.8em 0.6rem;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer ul, li {
+            display:inline;
+        }
+
+
+    </style>
+  </head>
+  <body>
+
+    <nav>
+        <ul class="navlinks">
+            <li><a href="https://mail.google.com/mail/?tab=wm&authuser=0&ogbl" tabindex="0"><p>Gmail</p></a></li>
+            <li><a href="https://www.google.pt/imghp?hl=en&tab=wi&authuser=0&ogbl" tabindex="0"><p>Images</p></a></li>
+            <li><a class="gb_D" href="https://www.google.pt/intl/en/about/products?tab=wh" title="Google apps" tabindex="0"></a></li>
+            <li><a href="" tabindex="0" title="Google Account: X (x@gmail.com)"><img class="gb_La" src="https://lh3.googleusercontent.com/ogw/ADGmqu_XJxrz8DzDUIaw1JVSZ-4tKH3z-TzQc6cB86c=s32-c-mo"></a></li>
+        </ul>
+    </nav>
+    <main>
+        <img class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        <form action="https://google.com/search" type="GET">
+            <input class="center" id="searchbar" type="search" name="q">
+            <div id="buttondiv">
+                <input class="button" type="submit" value="Google Search">
+                <input class="button" type="button" value="I'm Feeling Lucky">
+            </div>
+        </form>
+    </main>
+    
+    <footer>
+        <ul class="bottomleft">
+            <li><a href="https://www.google.com/intl/en_pt/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"><p>Advertising</p></a></li>
+            <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"><p>Business</p></a></li>
+            <li><a href="https://about.google/?utm_source=google-PT&utm_medium=referral&utm_campaign=hp-footer&fg=1"><p>About</p></a></li>
+            <li><a href="https://google.com/search/howsearchworks/?fg=1"><p>How Search works</p></a></li>
+        </ul>
+        <ul class="bottomright">
+            <li><a href="https://policies.google.com/privacy?hl=en-PT&fg=1"><p>Privacy</p></a></li>
+            <li><a href="https://policies.google.com/terms?hl=en-PT&fg=1"><p>Terms</p></a></li>
+            <li><a href="https://www.google.com/preferences?hl=en"><p>Settings</p></a></li>
+        </ul>
+    </footer>
+    
+    <script>
+        var form = document.querySelector("form");
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var search = form.querySelector("input[type=search]");
+          search.value = search.value;
+          form.submit();
+        });
+    </script>
+  </body>
+</html>
